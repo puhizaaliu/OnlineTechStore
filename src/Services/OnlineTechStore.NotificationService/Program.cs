@@ -15,4 +15,15 @@ app.UseHttpsRedirection();
 
 app.MapGet("/health", () => Results.Ok("Notification Service is running"));
 
+app.MapGet("/api/notifications", () =>
+{
+    var notifications = new[]
+    {
+        new { Id = 1, Message = "Order created successfully.", Type = "OrderConfirmation" },
+        new { Id = 2, Message = "Payment completed successfully.", Type = "PaymentConfirmation" }
+    };
+
+    return Results.Ok(notifications);
+});
+
 app.Run();
