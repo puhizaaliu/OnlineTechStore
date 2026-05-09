@@ -1,0 +1,6 @@
+@OnlineTechStore.ApiGateway_HostAddress = http://localhost:5020
+
+GET {{OnlineTechStore.ApiGateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

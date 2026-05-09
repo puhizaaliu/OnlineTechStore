@@ -1,0 +1,6 @@
+@OnlineTechStore.PaymentService_HostAddress = http://localhost:5117
+
+GET {{OnlineTechStore.PaymentService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
